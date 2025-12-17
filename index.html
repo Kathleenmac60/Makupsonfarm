@@ -1,343 +1,410 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Makupson Farming LLC | Indoor Hemp Supplier in Mississippi</title>
-    <meta
-      name="description"
-      content="Veteran-owned indoor hemp cultivation in Mississippi. Year-round, hand-harvested hemp flower and biomass for CBD processors and manufacturers."
-    />
-    <meta name="robots" content="index,follow" />
-    <link rel="canonical" href="/" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Makupson Farming LLC | Marshall County, Mississippi Farm</title>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Makupson Farming LLC | Indoor Hemp Supplier in Mississippi" />
-    <meta
-      property="og:description"
-      content="Year-round, clean, hand-harvested indoor hemp supply for Mississippi CBD processors."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="/" />
+  <!-- SEO -->
+  <meta name="description" content="Makupson Farming LLC is a diversified farm in Marshall County, Mississippi operating on 39 owned acres. We grow cotton and corn and raise chickens and goats." />
+  <meta name="keywords" content="Makupson Farming LLC, Marshall County Mississippi farm, Mississippi cotton farm, Mississippi corn farm, goats, chickens, veteran owned farm" />
+  <meta name="author" content="Makupson Farming LLC" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://your-domain.com/" />
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Makupson Farming LLC | Mississippi Farm" />
+  <meta property="og:description" content="39 acres owned in Marshall County, Mississippi. Cotton, corn, chickens, and goats." />
+  <meta property="og:type" content="website" />
 
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+  <style>
+    :root{
+      --bg:#0b0f0e;
+      --card:#121817;
+      --text:#e9f2ef;
+      --muted:#b9c7c2;
+      --line:#24302d;
+      --accent:#7ee2b8;
+      --accent2:#89b7ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(126,226,184,.18), transparent 60%),
+                  radial-gradient(1000px 600px at 90% 30%, rgba(137,183,255,.14), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,14,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:14px 24px;
+      max-width:1100px; margin:0 auto;
+    }
+    .brand{
+      display:flex; gap:10px; align-items:center; text-decoration:none;
+    }
+    .logo{
+      width:38px;height:38px;border-radius:12px;
+      background: linear-gradient(135deg, rgba(126,226,184,.95), rgba(137,183,255,.9));
+      box-shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    .brand b{letter-spacing:.3px}
+    .navlinks{display:flex; gap:14px; flex-wrap:wrap}
+    .navlinks a{
+      text-decoration:none; color:var(--muted);
+      padding:8px 10px; border-radius:10px;
+    }
+    .navlinks a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .hero{
+      padding:46px 0 18px 0;
+      display:grid; grid-template-columns: 1.25fr .75fr; gap:22px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+    }
+    .card{
+      background: rgba(18,24,23,.85);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.35);
+    }
+    h1{font-size:42px; margin:0 0 10px 0; line-height:1.1}
+    @media (max-width: 520px){h1{font-size:34px}}
+    .sub{color:var(--muted); font-size:16px; margin:0 0 18px 0}
+    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .pill{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      padding:8px 10px;
+      border-radius:999px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:18px}
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      padding:11px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      font-weight:600;
+    }
+    .btn.primary{
+      border-color: rgba(126,226,184,.45);
+      background: rgba(126,226,184,.14);
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:16px;
+      margin: 16px 0 0 0;
+    }
+    @media (max-width: 900px){.grid{grid-template-columns:1fr}}
+    .kpi{
+      padding:16px;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .kpi .label{color:var(--muted); font-size:12px}
+    .kpi .value{font-size:20px; font-weight:800; margin-top:4px}
+    section{scroll-margin-top:90px; margin-top:20px}
+    h2{margin:0 0 10px 0; font-size:22px}
+    h3{margin:0 0 6px 0; font-size:16px}
+    .muted{color:var(--muted)}
+    ul{margin:10px 0 0 18px; color:var(--muted)}
+    .two{
+      display:grid; grid-template-columns: 1fr 1fr; gap:16px;
+    }
+    @media (max-width: 900px){.two{grid-template-columns:1fr}}
+    footer{
+      margin-top:30px;
+      border-top:1px solid var(--line);
+      padding:18px 0 34px 0;
+      color:var(--muted);
+    }
+    .tiny{font-size:12px;color:var(--muted)}
+    .divider{height:1px;background:var(--line); margin:14px 0}
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px; border-radius:14px;
+      border:1px solid rgba(137,183,255,.35);
+      background: rgba(137,183,255,.10);
+      color: var(--text);
+      font-weight:700;
+      font-size:13px;
+    }
+    .badge .dot{width:10px;height:10px;border-radius:999px;background:var(--accent2)}
+    .note{
+      padding:12px 14px;
+      border-radius:16px;
+      border:1px dashed rgba(126,226,184,.45);
+      background: rgba(126,226,184,.08);
+      color:var(--muted);
+    }
+  </style>
+</head>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <a class="brand-link" href="#" aria-label="Makupson Farming LLC home">
-            <span class="brand-mark" aria-hidden="true">MF</span>
-            <span class="brand-text">
-              <span class="brand-name">Makupson Farming LLC</span>
-              <span class="brand-tag">Veteran-Owned • Indoor Hemp • Mississippi</span>
-            </span>
-          </a>
-        </div>
-
-        <nav class="nav" aria-label="Primary">
-          <a class="nav-link" href="#products">Products</a>
-          <a class="nav-link" href="#quality">Quality</a>
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link button button--ghost" href="#contact">Request Supply</a>
-        </nav>
-
-        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-          <span aria-hidden="true">☰</span>
-        </button>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="#top">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <b>Makupson Farming LLC</b><br />
+        <span class="tiny">Marshall County, Mississippi • 39 acres owned</span>
       </div>
-    </header>
+    </a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#operations">Operations</a>
+      <a href="#crops">Crops</a>
+      <a href="#livestock">Livestock</a>
+      <a href="#financials">Financials</a>
+      <a href="#veteran">Veteran</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <main id="main">
-      <!-- Hero -->
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <p class="eyebrow">Indoor cultivation • year-round supply • Mississippi</p>
-            <h1>Premium Indoor Hemp. <span class="nowrap">Grown Year-Round.</span></h1>
-            <p class="lead">
-              Makupson Farming LLC is a veteran-owned indoor hemp cultivation company delivering clean, hand-harvested
-              hemp flower and biomass to CBD processors and manufacturers across Mississippi.
-            </p>
+<main id="top" class="container">
+  <div class="hero">
+    <div class="card">
+      <div class="badge"><span class="dot"></span> Diversified Mississippi Farm</div>
+      <h1>Cotton • Corn • Chickens • Goats</h1>
+      <p class="sub">
+        Makupson Farming LLC operates on <b>39 acres of owned farmland</b> in <b>Marshall County, Mississippi</b>.
+        We focus on responsible land stewardship, steady production, and diversified income streams.
+      </p>
 
-            <div class="hero-cta">
-              <a class="button" href="#contact">Request Supply Information</a>
-              <a class="button button--secondary" href="#products">View Products</a>
-            </div>
-
-            <ul class="hero-badges" aria-label="Key highlights">
-              <li>Climate-controlled consistency</li>
-              <li>Third-party testing ready (COAs)</li>
-              <li>B2B wholesale & contracts</li>
-            </ul>
-          </div>
-
-          <div class="hero-card" role="region" aria-label="At-a-glance">
-            <div class="card">
-              <h2 class="card-title">At a glance</h2>
-              <dl class="facts">
-                <div class="fact">
-                  <dt>Business Type</dt>
-                  <dd>B2B hemp supplier</dd>
-                </div>
-                <div class="fact">
-                  <dt>Specialty</dt>
-                  <dd>Indoor, hand-harvested, small-batch</dd>
-                </div>
-                <div class="fact">
-                  <dt>Service Area</dt>
-                  <dd>Mississippi processors</dd>
-                </div>
-                <div class="fact">
-                  <dt>Supply Focus</dt>
-                  <dd>Flower • Biomass • Stems & Leaves</dd>
-                </div>
-              </dl>
-
-              <div class="card-note">
-                <p class="small">
-                  Looking for reliable, compliant supply? We prioritize consistency, documentation, and long-term
-                  purchasing relationships.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Value Props -->
-      <section class="section">
-        <div class="container">
-          <h2 class="section-title">Why processors work with us</h2>
-          <p class="section-subtitle">
-            Built for repeatable quality, reduced risk, and dependable year-round production.
-          </p>
-
-          <div class="grid-3">
-            <article class="feature">
-              <h3>Year-Round Indoor Production</h3>
-              <p>
-                Climate-controlled cultivation helps protect against weather, pests, and outdoor contamination—supporting
-                predictable, consistent supply.
-              </p>
-            </article>
-
-            <article class="feature">
-              <h3>Quality & Compliance Focused</h3>
-              <p>
-                Strict quality assurance, batch tracking, and third-party testing readiness (COAs) to support your
-                compliance and production needs.
-              </p>
-            </article>
-
-            <article class="feature">
-              <h3>Veteran-Owned & Operated</h3>
-              <p>
-                Led by disabled Army veterans with strong operational and financial leadership—built for professional
-                contracts and long-term partnerships.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Products -->
-      <section id="products" class="section section--alt">
-        <div class="container">
-          <h2 class="section-title">Products</h2>
-          <p class="section-subtitle">Wholesale and contract supply for extraction and manufacturing workflows.</p>
-
-          <div class="grid-3">
-            <article class="product">
-              <h3>Premium Hemp Flower</h3>
-              <p>
-                Indoor grown for consistent cannabinoid profiles and cleanliness. Ideal for processors needing premium,
-                verifiable input materials.
-              </p>
-              <ul class="list">
-                <li>Hand-harvested, small-batch</li>
-                <li>Packaged for wholesale handling</li>
-                <li>COA-ready documentation</li>
-              </ul>
-            </article>
-
-            <article class="product">
-              <h3>Hemp Biomass</h3>
-              <p>
-                Biomass tailored for extraction efficiency and reliable supply. Built for repeat ordering and long-term
-                supply planning.
-              </p>
-              <ul class="list">
-                <li>Indoor cultivation consistency</li>
-                <li>Batch tracking & QA checks</li>
-                <li>Contract volume available</li>
-              </ul>
-            </article>
-
-            <article class="product">
-              <h3>Stems & Leaves</h3>
-              <p>
-                Supplemental materials available for secondary processing and manufacturing inputs—aligned to your
-                procurement needs.
-              </p>
-              <ul class="list">
-                <li>Clean handling & storage</li>
-                <li>Available by request</li>
-                <li>Processor-friendly packaging</li>
-              </ul>
-            </article>
-          </div>
-
-          <div class="section-cta">
-            <a class="button" href="#contact">Request Specs & Availability</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Quality -->
-      <section id="quality" class="section">
-        <div class="container">
-          <h2 class="section-title">Quality & compliance</h2>
-          <p class="section-subtitle">
-            We’re built around consistent indoor production, contamination prevention, and documentation.
-          </p>
-
-          <div class="grid-2">
-            <div class="panel">
-              <h3>Quality controls</h3>
-              <ul class="checklist">
-                <li>Indoor climate-controlled environment</li>
-                <li>Hand-harvesting and careful handling</li>
-                <li>Batch-based QA inspection process</li>
-                <li>Storage and packaging protocols</li>
-              </ul>
-            </div>
-
-            <div class="panel">
-              <h3>Compliance readiness</h3>
-              <ul class="checklist">
-                <li>Third-party testing readiness (COAs)</li>
-                <li>THC compliance aligned to state requirements</li>
-                <li>Facility safety and operational protocols</li>
-                <li>Contract-friendly documentation</li>
-              </ul>
-              <p class="small muted">
-                Note: Final testing/licensing details can be displayed here once certificates and COAs are available.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About -->
-      <section id="about" class="section section--alt">
-        <div class="container">
-          <h2 class="section-title">About Makupson Farming LLC</h2>
-          <p class="section-subtitle">
-            Veteran-owned indoor hemp cultivation designed for Mississippi’s emerging market and growing processor demand.
-          </p>
-
-          <div class="grid-2">
-            <div class="panel">
-              <h3>Who we are</h3>
-              <p>
-                Makupson Farming LLC is a veteran-owned indoor hemp cultivation company based in Waterford, Mississippi.
-                We focus on premium, contaminant-free hemp materials for CBD extraction, wellness products, and
-                hemp-based manufacturing.
-              </p>
-              <p class="small muted">
-                Leadership: Andre Makupson (Operations) • Kathleen Makupson (CEO & Finance)
-              </p>
-            </div>
-
-            <div class="panel">
-              <h3>Our promise</h3>
-              <p class="quote">
-                “Reliable, clean, hand-harvested hemp—grown with precision, tested for quality, and available year-round.”
-              </p>
-              <p class="small muted">
-                We’re building long-term relationships with Mississippi-based processors that value consistency and
-                verifiable quality.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="section">
-        <div class="container">
-          <h2 class="section-title">Request supply information</h2>
-          <p class="section-subtitle">
-            Tell us what you need and we’ll respond with availability, next steps, and documentation requirements.
-          </p>
-
-          <div class="contact-grid">
-            <div class="panel">
-              <h3>Quick contact</h3>
-              <p class="small">
-                Email is the fastest way to start a supply conversation. Include desired product type and estimated
-                volume.
-              </p>
-              <div class="contact-actions">
-                <a class="button" href="mailto:info@makupsonfarming.com?subject=Supply%20Request%20-%20Makupson%20Farming%20LLC">
-                  Email Supply Request
-                </a>
-                <a class="button button--secondary" href="tel:+12253269054">Call (225) 326-9054</a>
-              </div>
-
-              <dl class="contact-details">
-                <div>
-                  <dt>Location</dt>
-                  <dd>Waterford, Mississippi 38685</dd>
-                </div>
-                <div>
-                  <dt>Business</dt>
-                  <dd>Makupson Farming LLC</dd>
-                </div>
-              </dl>
-            </div>
-
-            <div class="panel">
-              <h3>What to include</h3>
-              <ul class="checklist">
-                <li>Company name + role</li>
-                <li>Product interest (Flower / Biomass / Stems & Leaves)</li>
-                <li>Monthly or quarterly volume estimate</li>
-                <li>Preferred delivery timeline</li>
-                <li>COA/documentation requirements</li>
-              </ul>
-              <p class="small muted">
-                Want a form instead of email? If you host on Netlify, we can add a CSP-safe form with no scripts.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="footer-left">
-          <p class="footer-brand">Makupson Farming LLC</p>
-          <p class="small muted">Veteran-Owned Indoor Hemp Cultivation • Mississippi</p>
-        </div>
-        <div class="footer-right">
-          <a class="footer-link" href="#products">Products</a>
-          <a class="footer-link" href="#quality">Quality</a>
-          <a class="footer-link" href="#about">About</a>
-          <a class="footer-link" href="#contact">Request Supply</a>
-        </div>
+      <div class="pillrow">
+        <div class="pill">Owned Land (No Lease Risk)</div>
+        <div class="pill">Row Crops + Livestock</div>
+        <div class="pill">Veteran-Owned</div>
+        <div class="pill">USDA/FSA Loan Ready</div>
       </div>
 
-      <div class="container footer-bottom">
-        <p class="small muted">
-          © 2026 Makupson Farming LLC. All rights reserved.
+      <div class="ctaRow">
+        <a class="btn primary" href="#contact">Request Info / Meet</a>
+        <a class="btn" href="#financials">View Financial Snapshot</a>
+      </div>
+
+      <div class="grid" aria-label="Key metrics">
+        <div class="kpi">
+          <div class="label">Acreage</div>
+          <div class="value">39 acres</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Primary Crops</div>
+          <div class="value">Cotton & Corn</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Livestock</div>
+          <div class="value">Chickens & Goats</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Quick Overview</h2>
+      <p class="muted">
+        Makupson Farming LLC is owned equally by Kathleen Makupson and Andre Makupson.
+        The business is designed for resilience through diversification, disciplined management, and long-term infrastructure improvements.
+      </p>
+      <div class="divider"></div>
+      <h3>Core Goals</h3>
+      <ul>
+        <li>Maintain consistent cotton and corn production.</li>
+        <li>Expand chicken and goat operations as capacity grows.</li>
+        <li>Improve fencing, housing, and water systems.</li>
+        <li>Protect land health through soil testing and nutrient management.</li>
+      </ul>
+      <div class="divider"></div>
+      <div class="note">
+        <b>Note:</b> This site is built from our business plan and can be expanded into multiple pages (grant-ready, lender-ready, customer-facing).
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="card">
+    <h2>About Makupson Farming LLC</h2>
+    <p class="muted">
+      Makupson Farming LLC is a multi-member LLC operating in Marshall County, Mississippi.
+      We combine row crop production with livestock enterprises to reduce risk and support steady cash flow across seasons.
+      Our approach emphasizes land stewardship, operational planning, and strong financial discipline.
+    </p>
+  </section>
+
+  <section id="operations" class="card">
+    <h2>Operations Plan</h2>
+    <div class="two">
+      <div>
+        <h3>Land Use</h3>
+        <ul>
+          <li>Cotton: ~20 acres</li>
+          <li>Corn: ~15 acres</li>
+          <li>Livestock & infrastructure: ~4 acres</li>
+        </ul>
+        <h3 style="margin-top:14px;">Annual Cycle</h3>
+        <ul>
+          <li><b>Winter:</b> planning, maintenance, financial review</li>
+          <li><b>Spring:</b> planting, fertilization, livestock setup</li>
+          <li><b>Summer:</b> crop management, herd/flock care</li>
+          <li><b>Fall:</b> harvest, marketing, pasture rotation</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Practices</h3>
+        <ul>
+          <li>Routine soil testing and nutrient planning</li>
+          <li>Crop rotation (cotton/corn) to support soil health</li>
+          <li>Biosecurity and herd health protocols</li>
+          <li>Custom hire used when economical</li>
+          <li>Conservative reserves and insurance participation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="crops" class="card">
+    <h2>Crops</h2>
+    <div class="two">
+      <div>
+        <h3>Cotton</h3>
+        <p class="muted">
+          Cotton is our primary cash crop. We plan production seasonally, manage fertility and weeds, and market through local/regional gins.
         </p>
       </div>
-    </footer>
-  </body>
+      <div>
+        <h3>Corn</h3>
+        <p class="muted">
+          Corn provides flexible marketing options and can support livestock feeding when appropriate. We manage fertility based on soil tests and rotate as needed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="livestock" class="card">
+    <h2>Livestock</h2>
+    <div class="two">
+      <div>
+        <h3>Chickens</h3>
+        <ul>
+          <li>Egg production for local sales</li>
+          <li>Secure housing with predator protection</li>
+          <li>Feed management and sanitation protocols</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Goats</h3>
+        <ul>
+          <li>Meat goat production</li>
+          <li>Pasture management and brush control benefits</li>
+          <li>Fencing, shelter, and water access improvements</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="financials" class="card">
+    <h2>Financial Snapshot</h2>
+    <p class="muted">
+      These projections reflect a stabilized, post-investment year with conservative planning. Detailed monthly cash flow is available on request.
+    </p>
+    <div class="grid">
+      <div class="kpi">
+        <div class="label">Projected Gross Revenue</div>
+        <div class="value">$76k–$90k</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Estimated Operating Expenses</div>
+        <div class="value">~$58k</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Net Farm Income (pre-debt)</div>
+        <div class="value">$22k–$32k</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <h3>Loan Readiness</h3>
+    <p class="muted">
+      The farm is structured for stable repayment through diversified enterprise income and disciplined budgeting.
+      A formal operating plan, cash flow, and submission packet can be provided for USDA/FSA or lender review.
+    </p>
+  </section>
+
+  <section id="veteran" class="card">
+    <h2>Veteran & Disability Statement</h2>
+    <p class="muted">
+      Makupson Farming LLC is co-owned by a <b>100% permanently and totally disabled U.S. military veteran</b>.
+      The operation is structured to accommodate physical limitations through appropriate equipment use, task delegation, and management planning.
+    </p>
+    <p class="muted">
+      <b>Guaranteed disability and Social Security income supports stable cash flow</b>, strengthening continuity of operations and repayment capacity.
+    </p>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p class="muted">Want to discuss partnerships, purchasing, or program documentation? Reach out.</p>
+
+    <div class="two">
+      <div>
+        <h3>Business</h3>
+        <p class="muted">
+          <b>Makupson Farming LLC</b><br/>
+          Marshall County, Mississippi<br/>
+          39 acres owned
+        </p>
+        <p class="tiny">Add your email/phone below to make this live.</p>
+      </div>
+      <div>
+        <h3>Quick Contact Form (Email Link)</h3>
+        <p class="muted">Click to email us:</p>
+        <a class="btn primary" href="mailto:youremail@example.com?subject=Makupson%20Farming%20Inquiry">Email Makupson Farming LLC</a>
+        <div class="divider"></div>
+        <p class="tiny">
+          Replace <b>youremail@example.com</b> with your real email. If you want a real web form that sends messages,
+          I can add a free form backend (Formspree) or a simple Vercel serverless function.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="padding:0;">
+      <div class="tiny">
+        © <span id="y"></span> Makupson Farming LLC • Marshall County, Mississippi • Cotton • Corn • Chickens • Goats
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
 </html>
+
+
+
+       
+        
+            
+              
